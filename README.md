@@ -1,50 +1,91 @@
-# Welcome to your Expo app 👋
+# Rick and Morty APP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This app takes data from the Rick and Morty API, displays a list of characters, allows users to add characters to their favorites, and allows users to filter characters based on their choices using the MultiSelect component.
 
-## Get started
+## Description
 
-1. Install dependencies
+The Rick and Morty Character Explorer is a React Native application designed to showcase how to fetch and display data from an external API while incorporating modern features and a user-friendly interface.
 
-   ```bash
-   npm install
-   ```
+Key Features:
+Fetching Data: Fetch character data from the Rick and Morty API, including details like name, status, species, and origin.
 
-2. Start the app
+Character List: Display a list of characters in a visually appealing layout, with support for infinite scrolling and responsive design.
 
-   ```bash
-    npx expo start
-   ```
+Favorites Management:
+Users can add characters to a favorites list for quick access.
+A dedicated "Favorites" screen displays the selected characters, allowing users to remove them if desired.
 
-In the output, you'll find options to open the app in a
+Filtering Characters: Use the MultipleSelect component to filter characters based on user-selected criteria, such as name or status.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Smooth User Experience:
+Incorporate animations for interactive elements using react-native-reanimated. Activity indicators while data is being fetched to enhance the perceived performance.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This application not only demonstrates API integration but also highlights state management with tools like Zustand for managing selected characters and favorites, ensuring a seamless experience across components.
 
-## Get a fresh project
 
-When you're ready, run:
+
+
+
+
+## Features
+
+- **React Native**: Mobile application development framework.
+- **Expo**: A platform for making universal React applications.
+- **Navigation**: Implemented using `@react-navigation` and its various packages.
+- **State Management**: Using `@tanstack/react-query` for server-state synchronization.
+- **Favorites Management**: Users can add and remove characters to/from a favorites list . A dedicated "Favorites" screen displays the saved characters for easy access.
+- **Styling**: Styled with `nativewind` and `tailwindcss`.
+- **API Integration**: Axios is used for making API requests.
+- **Reanimated Animations**: Smooth animations using `react-native-reanimated`.
+- **Zustand**:A small, fast, and scalable bearbones state management solution. Zustand has a comfy API based on hooks. It isn't boilerplatey or opinionated, but has enough convention to be explicit and flux-like
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+
+ **Install dependencies:**
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+```bash
+yarn install
+```
 
-## Learn more
+```bash
+bun install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. **Running the Project:**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Android
 
-## Join the community
+```bash
+bunx or npx expo run:android
+```
 
-Join our community of developers creating universal apps.
+```bash
+bunx or npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## iOS
+
+```bash
+bunx or npx expo run:ios
+```
+
+```bash
+bunx or npx expo start
+```
+
+## Web
+
+```bash
+bunx or npx expo run:web
+```
+
+```bash
+bunx or npx expo start
+```
