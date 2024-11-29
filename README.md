@@ -73,6 +73,7 @@ bunx or npx expo start
 ## iOS
 
 ```bash
+npm run start
 bunx or npx expo run:ios
 ```
 
